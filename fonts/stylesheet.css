@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'Benzin';
+  src: url('Benzin-ExtraBold.eot');
+  src: local('Benzin-ExtraBold'), url('Benzin-ExtraBold.woff2') format('woff2'),
+    url('Benzin-ExtraBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Benzin';
+  src: url('Benzin-Medium.eot');
+  src: local('Benzin-Medium'), url('Benzin-Medium.woff2') format('woff2'),
+    url('Benzin-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Benzin';
+  src: local('Benzin-Bold'), url('Benzin-Bold.woff2') format('woff2'),
+    url('Benzin-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Benzin';
+  src: local('Benzin-Semibold'), url('Benzin-Semibold.woff2') format('woff2'),
+    url('Benzin-Semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Benzin';
+  src: local('Benzin-Regular'), url('Benzin-Regular.woff2') format('woff2'),
+    url('Benzin-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
