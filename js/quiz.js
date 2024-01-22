@@ -1,29 +1,51 @@
 let currentStep = 1;
 const totalSteps = 3;
 
-// function updateStepIndicator() {
-//   const stepIndicator = document.getElementById('stepIndicator');
-//   stepIndicator.textContent = `${currentStep}`;
-// }
-
 function nextStep() {
   const currentStepElement = document.getElementById(`step${currentStep}`);
-  currentStepElement.classList.remove('active');
+  currentStepElement.classList.remove('active', 'current-step');
   currentStep++;
 
-  if (currentStep <= 3) {
+  if (currentStep <= totalSteps) {
     const nextStepElement = document.getElementById(`step${currentStep}`);
-    nextStepElement.classList.add('active');
+    nextStepElement.classList.add('active', 'current-step');
     updateStepIndicator();
   } else {
     alert('Квиз завершен!');
   }
 }
 
-function submitQuiz() {
-  // Здесь можно обработать данные квиза, например, отправить на сервер
-  alert('Квиз завершен!');
+function prevStep() {
+  if (currentStep > 1) {
+    const currentStepElement = document.getElementById(`step${currentStep}`);
+    currentStepElement.classList.remove('active', 'current-step');
+    currentStep--;
+
+    const prevStepElement = document.getElementById(`step${currentStep}`);
+    prevStepElement.classList.add('active', 'current-step');
+    updateStepIndicator();
+  }
 }
 
-// Инициализация
-// updateStepIndicator();
+function updateStepIndicator() {
+  const stepIndicatorElement = document.getElementById('stepIndicator');
+  stepIndicatorElement.textContent = currentStep;
+}
+
+function submitQuiz() {
+  const currentStepElement = document.getElementById(`step${currentStep}`);
+  const inputs = currentStepElement.querySelectorAll('input[required]');
+  let isValid = true;
+
+  inputs.forEach(input => {
+      if (!input.value.trim()) {
+          isValid = false;
+      }
+  });
+
+  if (isValid) {
+      alert('Квиз завершен!');
+  } else {
+      alert('Пожалуйста, заполните все обязательные поля.');
+  }
+}

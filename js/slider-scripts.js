@@ -38,7 +38,7 @@ window.addEventListener('resize', function () {
 var swiperTwo = new Swiper('.mySwiperTwo', {
   slidesPerView: 2,
   // centeredSlides: true,
-  spaceBetween: 0,
+  spaceBetween: 30,
   loop: true,
   navigation: {
     nextEl: '.swiper-button-next',

@@ -7,7 +7,7 @@
     <link rel="icon" type="image/png" href="favicon.png" />
 
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/style.css?=v1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
     <title>X-Transport</title>
   </head>
@@ -489,7 +489,7 @@
                 </a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="about-us.html"> Про нас </a>
+                <a class="nav__link" href="#"> Про нас </a>
                 <a class="drop-menu" href="#"> </a>
               </li>
               <li class="nav__item">
@@ -552,13 +552,13 @@
     <!-- ./Header -->
 
     <!-- Intro -->
-    <section class="intro">
+    <section class="intro categories-intro">
       <div class="container">
-        <div class="intro__inner">
-          <div class="intro__left">
-            <div class="intro__title--top">ТРАНСПОРТНАЯ КОМПАНИЯ</div>
-
-            <h1 class="intro__title--main"><span>X-</span>TRANS</h1>
+        <div class="intro__inner categories-intro__inner">
+          <div class="intro__left categories-intro__left">
+            <h1 class="intro__title--main categories__title--main">
+              <span>Міжнародні</span> перевезення
+            </h1>
 
             <div class="intro__subtitle">
               Перевезем ваш груз по территории Украины, Европы и Азии
@@ -566,71 +566,20 @@
 
             <p class="intro__text">Сделаем вашу перевозку выгоднее до <span>10-15%</span></p>
 
-            <a class="effect effect-1" href="#" title="Learn More">Заказать консультацию </a>
+            <a class="effect effect-1" href="#">Заказать консультацию</a>
 
             <div class="mobile-img">
-              <img src="images/mobile-truck.png" alt="truck img" />
+              <img src="images/intro-2-mob.png" alt="truck img" />
             </div>
           </div>
-          <div class="intro__right">
-            <img src="images/intro-car.png" alt="" />
-            <img class="mobile-truck" src="images/mobile-truck.png" alt="" />
-          </div>
+        </div>
+        <div class="intro__right categories-intro__right">
+          <img src="images/intro-3.png" alt="" />
+          <img class="mobile-truck" src="images/mobile-truck.png" alt="" />
         </div>
       </div>
     </section>
     <!-- ./Intro -->
-
-    <!-- Benefits -->
-    <section class="benefits">
-      <div class="container">
-        <div class="benefits__inner">
-          <div class="benefits__item">
-            <div class="benefits__title">
-              <div class="benefits-wrap">
-                <img src="images/up-left-arrow.svg" alt="arrow icon" />
-                <div class="benefits__info">
-                  <span class="benefits__text" id="number">6</span>
-                  <span class="benefits__str">лет</span>
-                  <div class="benefits__subtitle">Опыта в перевозках</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="benefits__item">
-            <div class="benefits__title">
-              <div class="benefits-wrap">
-                <img src="images/up-left-arrow.svg" alt="arrow icon" />
-                <div class="benefits__info">
-                  <span class="benefits__text" id="number-2">15000</span>
-                  <span class="benefits__str">+</span>
-                  <div class="benefits__subtitle">Перевезенных грузов </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="benefits__item">
-            <div class="benefits__title">
-              <div class="benefits-wrap">
-                <img src="images/up-left-arrow.svg" alt="arrow icon" />
-                <div class="benefits__info">
-                  <span class="benefits__text" id="number-3">2000</span>
-                  <span class="benefits__str">+</span>
-                  <div class="benefits__subtitle">Авто в нашей партнерской сети</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="benefits-mobile">
-          <img src="images/second-bg.svg" alt="bg image" />
-        </div>
-      </div>
-    </section>
-    <!-- ./Benefits -->
 
     <!-- Services -->
     <section class="services">
@@ -649,7 +598,7 @@
               <span> / 1</span>
               <p>Перевозки по украине</p>
             </div>
-            <a class="services__item--button btn" href="categories.html">
+            <a class="services__item--button btn effect effect-1">
               <p>Детальніше</p>
               <img class="arrow-btn" src="images/arrow-btn.svg" alt="arrow icon" />
             </a>
@@ -661,7 +610,7 @@
               <span>/ 2</span>
               <p>Международные перевозки</p>
             </div>
-            <a class="services__item--button btn" href="categories-2.html">
+            <a class="services__item--button btn">
               <p>Детальніше</p>
               <img class="arrow-btn" src="images/arrow-btn.svg" alt="arrow icon" />
             </a>
@@ -673,7 +622,7 @@
               <span>/ 3</span>
               <p>перевозки попутных грузов</p>
             </div>
-            <a class="services__item--button btn" href="categories-3.html">
+            <a class="services__item--button btn">
               <p>Детальніше</p>
               <img class="arrow-btn" src="images/arrow-btn.svg" alt="arrow icon" />
             </a>
@@ -755,253 +704,153 @@
     </section>
     <!-- ./Services -->
 
-    <!-- Garantee -->
-    <section class="garantee">
+    <!-- Logistic -->
+    <section class="logistic">
       <div class="container">
-        <div class="garantee__inner">
-          <div class="garantee__left">
-            <div class="license">
-              <img src="images/licence.png" alt="license img" />
-              <a data-fancybox="gallery" class="license-link" href="images/licence.png">
-                <div class="search-wrap">
-                  <svg
-                    width="154"
-                    height="154"
-                    viewBox="0 0 154 154"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <circle cx="77" cy="77" r="77" fill="#1A1B1D" />
-                    <circle
-                      cx="77"
-                      cy="77"
-                      r="69"
-                      fill="#1A1B1D"
-                      stroke="#28292D"
-                      stroke-width="2"
-                    />
-                    <path
-                      d="M79.2077 86.9265H81.7812"
-                      stroke="white"
-                      stroke-width="2"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M65.9724 75.2537H81.7812"
-                      stroke="white"
-                      stroke-width="2"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M65.9724 64.2244H81.7812"
-                      stroke="white"
-                      stroke-width="2"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M89.1305 86.9265H90.9688"
-                      stroke="white"
-                      stroke-width="2"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M89.1305 75.2537H90.9688"
-                      stroke="white"
-                      stroke-width="2"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M89.1305 64.2244H90.9688"
-                      stroke="white"
-                      stroke-width="2"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <mask
-                      id="mask0_619_34926"
-                      style="mask-type: luminance"
-                      maskUnits="userSpaceOnUse"
-                      x="54"
-                      y="52"
-                      width="48"
-                      height="48"
-                    >
-                      <path d="M102 52H54.9412V99.0588H102V52Z" fill="white" />
-                    </mask>
-                    <g mask="url(#mask0_619_34926)">
-                      <path
-                        d="M65.4177 81.8714C68.971 81.8714 71.8516 84.7519 71.8516 88.3052C71.8516 91.8585 68.971 94.739 65.4177 94.739C61.8644 94.739 58.9839 91.8585 58.9839 88.3052C58.9839 84.7519 61.8644 81.8714 65.4177 81.8714Z"
-                        stroke="white"
-                        stroke-width="2"
-                        stroke-miterlimit="10"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M60.7305 93.2685L56.7783 97.2207"
-                        stroke="white"
-                        stroke-width="2"
-                        stroke-miterlimit="10"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M75.7116 97.2207H94.6455C97.6911 97.2207 100.16 94.7517 100.16 91.706V59.3531C100.16 56.3074 97.6911 53.8384 94.6455 53.8384H62.2925C59.2468 53.8384 56.7778 56.3074 56.7778 59.3531V77.5516"
-                        stroke="white"
-                        stroke-width="2"
-                        stroke-miterlimit="10"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </g>
-                  </svg>
+        <div class="services__top">
+          <div class="title">Надаємо супутні <span>логістичні послуги</span>:</div>
+
+          <a class="services__link">
+            <img class="down-arrow" src="images/services/down-arrow.svg" alt="arrow icon" />
+          </a>
+        </div>
+
+        <div class="logistic__items">
+          <div class="logistic__item">
+            <img src="images/logistic/1.svg" alt="logistic icon" />
+            <p>Повний документальний супровід вантажу на всіх його етапах</p>
+          </div>
+          <div class="logistic__item">
+            <img src="images/logistic/2.svg" alt="logistic icon" />
+            <p>Митні та брокерські послуги</p>
+          </div>
+          <div class="logistic__item">
+            <img src="images/logistic/3.svg" alt="logistic icon" />
+            <p>Навантажувально-розвантажувальні роботи</p>
+          </div>
+          <div class="logistic__item">
+            <img src="images/logistic/4.svg" alt="logistic icon" />
+            <p>Послуги спецтехніки</p>
+          </div>
+          <div class="logistic__item">
+            <img src="images/logistic/5.svg" alt="logistic icon" />
+            <p>Страхування вантажу та експедиторська відповідальність</p>
+          </div>
+          <div class="logistic__item">
+            <img src="images/logistic/6.svg" alt="logistic icon" />
+            <p>Послуги служби безпеки та супроводу вантажу</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ./Logistic -->
+
+    <section class="custom-service">
+      <div class="container">
+        <div class="services__top">
+          <div class="title"><span>митні</span> та <span>брокерські</span> послуги:</div>
+
+          <a class="services__link">
+            <img class="down-arrow" src="images/services/down-arrow.svg" alt="arrow icon" />
+          </a>
+        </div>
+
+        <div class="custom-service__items">
+          <div class="custom-service__item">
+            <img src="images/up-left-arrow.svg" alt="arrow img" />
+            <p>Експортна декларація</p>
+          </div>
+          <div class="custom-service__item">
+            <img src="images/up-left-arrow.svg" alt="arrow img" />
+            <p>Транзитна декларація (Т1)</p>
+          </div>
+          <div class="custom-service__item">
+            <img src="images/up-left-arrow.svg" alt="arrow img" />
+            <p>Митна декларація</p>
+          </div>
+          <div class="custom-service__item">
+            <img src="images/up-left-arrow.svg" alt="arrow img" />
+            <p>Ветеринарний дозвіл</p>
+          </div>
+          <div class="custom-service__item">
+            <img src="images/up-left-arrow.svg" alt="arrow img" />
+            <p>Сертифікат EUR.1</p>
+          </div>
+          <div class="custom-service__item">
+            <img src="images/up-left-arrow.svg" alt="arrow img" />
+            <p>TIR</p>
+          </div>
+          <div class="custom-service__item">
+            <img src="images/up-left-arrow.svg" alt="arrow img" />
+            <p>CMR</p>
+          </div>
+          <div class="custom-service__item">
+            <img src="images/up-left-arrow.svg" alt="arrow img" />
+            <p>Проходження агенції</p>
+          </div>
+          <div class="custom-service__item">
+            <img src="images/up-left-arrow.svg" alt="arrow img" />
+            <p>Пропуск</p>
+          </div>
+          <div class="custom-service__item">
+            <img src="images/up-left-arrow.svg" alt="arrow img" />
+            <p>Попереднє повідомлення</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="benefits">
+      <div class="container">
+        <div class="title benefits__title--main">Наші <span>переваги</span></div>
+        <div class="benefits__inner">
+          <div class="benefits__item">
+            <div class="benefits__title">
+              <div class="benefits-wrap">
+                <img src="images/up-left-arrow.svg" alt="arrow icon" />
+                <div class="benefits__info">
+                  <span class="benefits__text" id="number">6</span>
+                  <span class="benefits__str">лет</span>
+                  <div class="benefits__subtitle">Опыта в перевозках</div>
                 </div>
-              </a>
+              </div>
             </div>
           </div>
 
-          <div class="garantee__right">
-            <h3 class="title">твердая <span>гарантия</span></h3>
-            <div class="subtitle">
-              Все грузы застрахованы в компании Страховая компания «Перша» на
-              <span>4 млн грн.</span>
+          <div class="benefits__item">
+            <div class="benefits__title">
+              <div class="benefits-wrap">
+                <img src="images/up-left-arrow.svg" alt="arrow icon" />
+                <div class="benefits__info">
+                  <span class="benefits__text" id="number-2">15000</span>
+                  <span class="benefits__str">+</span>
+                  <div class="benefits__subtitle">Перевезенных грузов </div>
+                </div>
+              </div>
             </div>
-            <div class="garantee__text">
-              Страховка распространяется на все типы грузов , включая грузы под температурным
-              режимом, негабаритные и опасные грузы как по Украине, так и по территории Европы
-            </div>
-            <a class="effect effect-1" href="">Заказать консультацию</a>
           </div>
+
+          <div class="benefits__item">
+            <div class="benefits__title">
+              <div class="benefits-wrap">
+                <img src="images/up-left-arrow.svg" alt="arrow icon" />
+                <div class="benefits__info">
+                  <span class="benefits__text" id="number-3">2000</span>
+                  <span class="benefits__str">+</span>
+                  <div class="benefits__subtitle">Авто в нашей партнерской сети</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="benefits-mobile">
+          <img src="images/second-bg.svg" alt="bg image" />
         </div>
       </div>
     </section>
-    <!-- ./Garantee -->
-
-    <!-- Ticker -->
-    <div class="running-text-section">
-      <div class="running-text-container">
-        <div class="running-text">
-          <div class="ticker__text">
-            <img src="images/ticker-img.png" alt="" />
-            <p>
-              Лучшая транспортная <br />
-              компания Украины 2023
-            </p>
-          </div>
-          <div class="ticker__text">
-            <img src="images/ticker-img.png" alt="" />
-            <p>
-              Лучшая транспортная <br />
-              компания Украины 2023
-            </p>
-          </div>
-          <div class="ticker__text">
-            <img src="images/ticker-img.png" alt="" />
-            <p>
-              Лучшая транспортная <br />
-              компания Украины 2023
-            </p>
-          </div>
-          <div class="ticker__text">
-            <img src="images/ticker-img.png" alt="" />
-            <p>
-              Лучшая транспортная <br />
-              компания Украины 2023
-            </p>
-          </div>
-          <div class="ticker__text">
-            <img src="images/ticker-img.png" alt="" />
-            <p>
-              Лучшая транспортная <br />
-              компания Украины 2023
-            </p>
-          </div>
-          <div class="ticker__text">
-            <img src="images/ticker-img.png" alt="" />
-            <p>
-              Лучшая транспортная <br />
-              компания Украины 2023
-            </p>
-          </div>
-          <div class="ticker__text">
-            <img src="images/ticker-img.png" alt="" />
-            <p>
-              Лучшая транспортная <br />
-              компания Украины 2023
-            </p>
-          </div>
-          <div class="ticker__text">
-            <img src="images/ticker-img.png" alt="" />
-            <p>
-              Лучшая транспортная <br />
-              компания Украины 2023
-            </p>
-          </div>
-          <div class="ticker__text">
-            <img src="images/ticker-img.png" alt="" />
-            <p>
-              Лучшая транспортная <br />
-              компания Украины 2023
-            </p>
-          </div>
-          <div class="ticker__text">
-            <img src="images/ticker-img.png" alt="" />
-            <p>
-              Лучшая транспортная <br />
-              компания Украины 2023
-            </p>
-          </div>
-          <div class="ticker__text">
-            <img src="images/ticker-img.png" alt="" />
-            <p>
-              Лучшая транспортная <br />
-              компания Украины 2023
-            </p>
-          </div>
-          <div class="ticker__text">
-            <img src="images/ticker-img.png" alt="" />
-            <p>
-              Лучшая транспортная <br />
-              компания Украины 2023
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- ./Ticker -->
-
-    <!-- Team -->
-    <section class="team">
-      <div class="container">
-        <div class="team__inner">
-          <div class="team__left">
-            <h3 class="title">с нами <span>надежно</span></h3>
-
-            <div class="subtitle">
-              Наша компания признана лучшей транспортной компанией 2023 г. во все -украинской
-              номинации <span>«Вибір країни»</span>
-            </div>
-
-            <img src="images/medal.png" alt="medal img" />
-          </div>
-          <div class="team__right">
-            <img src="images/team.png" alt="team" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ./Team -->
+    <!-- ./Benefits -->
 
     <!-- Application -->
     <section class="application">
@@ -1014,7 +863,7 @@
               і ми гарантуємо подачу авто вже сьогодні
             </div>
 
-            <a class="effect effect-1" href="#">Заказать консультацию</a>
+            <a class="btn effect effect-1" href="#">Заказать консультацию</a>
 
             <div class="mobile-img mobile-img--second">
               <img src="images/red-cars.png" alt="cars img" />
@@ -1317,6 +1166,327 @@
       </div>
     </section>
     <!-- ./Types -->
+
+    <!-- Garantee -->
+    <section class="garantee">
+      <div class="container">
+        <div class="garantee__inner">
+          <div class="garantee__left">
+            <div class="license">
+              <img src="images/licence.png" alt="license img" />
+              <a data-fancybox="gallery" class="license-link" href="images/licence.png">
+                <div class="search-wrap">
+                  <svg
+                    width="154"
+                    height="154"
+                    viewBox="0 0 154 154"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="77" cy="77" r="77" fill="#1A1B1D" />
+                    <circle
+                      cx="77"
+                      cy="77"
+                      r="69"
+                      fill="#1A1B1D"
+                      stroke="#28292D"
+                      stroke-width="2"
+                    />
+                    <path
+                      d="M79.2077 86.9265H81.7812"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M65.9724 75.2537H81.7812"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M65.9724 64.2244H81.7812"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M89.1305 86.9265H90.9688"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M89.1305 75.2537H90.9688"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M89.1305 64.2244H90.9688"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <mask
+                      id="mask0_619_34926"
+                      style="mask-type: luminance"
+                      maskUnits="userSpaceOnUse"
+                      x="54"
+                      y="52"
+                      width="48"
+                      height="48"
+                    >
+                      <path d="M102 52H54.9412V99.0588H102V52Z" fill="white" />
+                    </mask>
+                    <g mask="url(#mask0_619_34926)">
+                      <path
+                        d="M65.4177 81.8714C68.971 81.8714 71.8516 84.7519 71.8516 88.3052C71.8516 91.8585 68.971 94.739 65.4177 94.739C61.8644 94.739 58.9839 91.8585 58.9839 88.3052C58.9839 84.7519 61.8644 81.8714 65.4177 81.8714Z"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M60.7305 93.2685L56.7783 97.2207"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M75.7116 97.2207H94.6455C97.6911 97.2207 100.16 94.7517 100.16 91.706V59.3531C100.16 56.3074 97.6911 53.8384 94.6455 53.8384H62.2925C59.2468 53.8384 56.7778 56.3074 56.7778 59.3531V77.5516"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="garantee__right">
+            <h3 class="title">твердая <span>гарантия</span></h3>
+            <div class="subtitle">
+              Все грузы застрахованы в компании Страховая компания «Перша» на
+              <span>4 млн грн.</span>
+            </div>
+            <div class="garantee__text">
+              Страховка распространяется на все типы грузов , включая грузы под температурным
+              режимом, негабаритные и опасные грузы как по Украине, так и по территории Европы
+            </div>
+            <a class="btn effect effect-1" href="">Заказать консультацию</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ./Garantee -->
+
+    <!-- Ticker -->
+    <div class="running-text-section">
+      <div class="running-text-container">
+        <div class="running-text">
+          <div class="ticker__text">
+            <img src="images/ticker-img.png" alt="" />
+            <p>
+              Лучшая транспортная <br />
+              компания Украины 2023
+            </p>
+          </div>
+          <div class="ticker__text">
+            <img src="images/ticker-img.png" alt="" />
+            <p>
+              Лучшая транспортная <br />
+              компания Украины 2023
+            </p>
+          </div>
+          <div class="ticker__text">
+            <img src="images/ticker-img.png" alt="" />
+            <p>
+              Лучшая транспортная <br />
+              компания Украины 2023
+            </p>
+          </div>
+          <div class="ticker__text">
+            <img src="images/ticker-img.png" alt="" />
+            <p>
+              Лучшая транспортная <br />
+              компания Украины 2023
+            </p>
+          </div>
+          <div class="ticker__text">
+            <img src="images/ticker-img.png" alt="" />
+            <p>
+              Лучшая транспортная <br />
+              компания Украины 2023
+            </p>
+          </div>
+          <div class="ticker__text">
+            <img src="images/ticker-img.png" alt="" />
+            <p>
+              Лучшая транспортная <br />
+              компания Украины 2023
+            </p>
+          </div>
+          <div class="ticker__text">
+            <img src="images/ticker-img.png" alt="" />
+            <p>
+              Лучшая транспортная <br />
+              компания Украины 2023
+            </p>
+          </div>
+          <div class="ticker__text">
+            <img src="images/ticker-img.png" alt="" />
+            <p>
+              Лучшая транспортная <br />
+              компания Украины 2023
+            </p>
+          </div>
+          <div class="ticker__text">
+            <img src="images/ticker-img.png" alt="" />
+            <p>
+              Лучшая транспортная <br />
+              компания Украины 2023
+            </p>
+          </div>
+          <div class="ticker__text">
+            <img src="images/ticker-img.png" alt="" />
+            <p>
+              Лучшая транспортная <br />
+              компания Украины 2023
+            </p>
+          </div>
+          <div class="ticker__text">
+            <img src="images/ticker-img.png" alt="" />
+            <p>
+              Лучшая транспортная <br />
+              компания Украины 2023
+            </p>
+          </div>
+          <div class="ticker__text">
+            <img src="images/ticker-img.png" alt="" />
+            <p>
+              Лучшая транспортная <br />
+              компания Украины 2023
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ./Ticker -->
+
+    <!-- Team -->
+    <section class="team">
+      <div class="container">
+        <div class="team__inner">
+          <div class="team__left">
+            <h3 class="title">твердая <span>гарантия</span></h3>
+
+            <div class="subtitle">
+              Наша компания признана лучшей транспортной компанией 2023 г. во все -украинской
+              номинации <span>«Вибір країни»</span>
+            </div>
+
+            <img src="images/medal.png" alt="medal img" />
+          </div>
+          <div class="team__right">
+            <img src="images/team.png" alt="team" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ./Team -->
+
+    <!-- Advantages -->
+    <section class="advantages">
+      <div class="container">
+        <div class="advantages__inner">
+          <div class="advantages__left">
+            <div class="advantages__left--top">
+              <h3 class="title">
+                Ми позбавимо Вас від <span>болю</span> та <span>недоліків</span>,
+              </h3>
+              <div class="subtitle">
+                з якими ви щодня зіштовхуєтесь на ринку перевезень вантажів
+              </div>
+
+              <div class="advantages__img--mobile">
+                <img src="images/sad-man.png" alt="sad man img" />
+              </div>
+            </div>
+
+            <div class="advantages__items">
+              <div class="advantages__left--bottom">
+                <div class="advantages__left--item">
+                  <img src="images/up-left-arrow.svg" alt="arrow img" />
+                  <p>Відмова, підміна умов договору</p>
+                </div>
+                <div class="advantages__left--item">
+                  <img src="images/up-left-arrow.svg" alt="arrow img" />
+                  <p>Погана комунікація з замовником</p>
+                </div>
+                <div class="advantages__left--item">
+                  <img src="images/up-left-arrow.svg" alt="arrow img" />
+                  <p>Відсутність клієнт-сервісу</p>
+                </div>
+                <div class="advantages__left--item">
+                  <img src="images/up-left-arrow.svg" alt="arrow img" />
+                  <p>Збльшення ціни в ході перевезення</p>
+                </div>
+                <div class="advantages__left--item">
+                  <img src="images/up-left-arrow.svg" alt="arrow img" />
+                  <p>Крадіжка/псування вантажу</p>
+                </div>
+              </div>
+              <div class="advantages__left--bottom">
+                <div class="advantages__left--item">
+                  <img src="images/up-left-arrow.svg" alt="arrow img" />
+                  <p>Відсутність повного спектру послуг</p>
+                </div>
+                <div class="advantages__left--item">
+                  <img src="images/up-left-arrow.svg" alt="arrow img" />
+                  <p>Відсутність кредитної лінії і відстрочки</p>
+                </div>
+                <div class="advantages__left--item">
+                  <img src="images/up-left-arrow.svg" alt="arrow img" />
+                  <p>Зірвані терміни поставки</p>
+                </div>
+                <div class="advantages__left--item">
+                  <img src="images/up-left-arrow.svg" alt="arrow img" />
+                  <p>Відсутність всіх видів оплати за послуги</p>
+                </div>
+                <div class="advantages__left--item">
+                  <img src="images/up-left-arrow.svg" alt="arrow img" />
+                  <p>Зривання завантажень</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="advantages__right">
+            <img src="images/sad-man.png" alt="man img" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ./Advantages -->
 
     <!-- Steps -->
     <section class="steps">
@@ -1653,7 +1823,7 @@
                     </div>
 
                     <div class="cases__bottom">
-                      <a href="" class="effect effect-1 cases__btn">Детальніше</a>
+                      <a href="" class="effect effect-1 cases__btn effect effect-1">Детальніше</a>
                       <div class="cases__bottom--crumbs">
                         <a href="#">Перевезення до 3т</a>
                         <a href="#">Перевезення тент</a>
@@ -1706,7 +1876,7 @@
                     </div>
 
                     <div class="cases__bottom">
-                      <a href="" class="effect effect-1 cases__btn">Детальніше</a>
+                      <a href="" class="effect effect-1 cases__btn effect effect-1">Детальніше</a>
                       <div class="cases__bottom--crumbs">
                         <a href="#">Перевезення до 3т</a>
                         <a href="#">Перевезення тент</a>
@@ -1753,7 +1923,7 @@
                     </div>
 
                     <div class="cases__bottom">
-                      <a href="" class="effect effect-1 cases__btn">Детальніше</a>
+                      <a href="" class="effect effect-1 cases__btn effect effect-1">Детальніше</a>
                       <div class="cases__bottom--crumbs">
                         <a href="#">Перевезення до 3т</a>
                         <a href="#">Перевезення тент</a>
@@ -1842,7 +2012,7 @@
                 залишіть заявку і ми безкоштовно надамо консультацію
               </div>
 
-              <a class="effect effect-1" href="#">Заказать консультацию</a>
+              <a class="btn effect effect-1" href="#">Заказать консультацию</a>
             </div>
 
             <div class="application__left--second">

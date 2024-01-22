@@ -7,7 +7,7 @@
     <link rel="icon" type="image/png" href="favicon.png" />
 
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/style.css?=v1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
     <title>X-Transport</title>
   </head>
@@ -489,7 +489,7 @@
                 </a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="about-us.html"> Про нас </a>
+                <a class="nav__link" href="#"> Про нас </a>
                 <a class="drop-menu" href="#"> </a>
               </li>
               <li class="nav__item">
@@ -552,13 +552,14 @@
     <!-- ./Header -->
 
     <!-- Intro -->
-    <section class="intro">
+    <section class="intro categories-intro">
       <div class="container">
-        <div class="intro__inner">
-          <div class="intro__left">
-            <div class="intro__title--top">ТРАНСПОРТНАЯ КОМПАНИЯ</div>
-
-            <h1 class="intro__title--main"><span>X-</span>TRANS</h1>
+        <div class="intro__inner categories-intro__inner">
+          <div class="intro__left categories-intro__left">
+            <h1 class="intro__title--main categories__title--main">
+              про компанію<br />
+              <span>X</span>-trans
+            </h1>
 
             <div class="intro__subtitle">
               Перевезем ваш груз по территории Украины, Европы и Азии
@@ -566,15 +567,14 @@
 
             <p class="intro__text">Сделаем вашу перевозку выгоднее до <span>10-15%</span></p>
 
-            <a class="effect effect-1" href="#" title="Learn More">Заказать консультацию </a>
+            <a class="effect effect-1" href="#">Заказать консультацию</a>
 
             <div class="mobile-img">
-              <img src="images/mobile-truck.png" alt="truck img" />
+              <img src="images/mobile-team.png" alt="truck img" />
             </div>
           </div>
-          <div class="intro__right">
-            <img src="images/intro-car.png" alt="" />
-            <img class="mobile-truck" src="images/mobile-truck.png" alt="" />
+          <div class="about__right">
+            <img src="images/about-bg.png" alt="" />
           </div>
         </div>
       </div>
@@ -582,8 +582,21 @@
     <!-- ./Intro -->
 
     <!-- Benefits -->
-    <section class="benefits">
+    <section class="benefits benefits-about">
       <div class="container">
+        <div class="benefits__top">
+          <p>
+            Ласкаво просимо до X-ТРАНС – вашого надійного партнера у сфері транспортно-експедиційних
+            послуг. Наша компанія вже шість років успішно працює на ринку вантажоперевезень і має
+            досвід у виконанні понад <span>3000</span> перевезень щорічно. Ми визнані найкращою
+            транспортною компанією в Україні за аналітичною оцінкою та номінацією
+            <span>"Вибір країни 2023"</span>.
+          </p>
+          <img class="desktop-benefits" src="images/medal-2.png" alt="medal img" />
+          <img class="mobile-benefits" src="images/medal.png" alt="medals img" />
+        </div>
+
+        <div class="title benefits__title--main">Наші <span>переваги</span></div>
         <div class="benefits__inner">
           <div class="benefits__item">
             <div class="benefits__title">
@@ -649,7 +662,7 @@
               <span> / 1</span>
               <p>Перевозки по украине</p>
             </div>
-            <a class="services__item--button btn" href="categories.html">
+            <a class="services__item--button btn effect effect-1">
               <p>Детальніше</p>
               <img class="arrow-btn" src="images/arrow-btn.svg" alt="arrow icon" />
             </a>
@@ -661,7 +674,7 @@
               <span>/ 2</span>
               <p>Международные перевозки</p>
             </div>
-            <a class="services__item--button btn" href="categories-2.html">
+            <a class="services__item--button btn">
               <p>Детальніше</p>
               <img class="arrow-btn" src="images/arrow-btn.svg" alt="arrow icon" />
             </a>
@@ -673,7 +686,7 @@
               <span>/ 3</span>
               <p>перевозки попутных грузов</p>
             </div>
-            <a class="services__item--button btn" href="categories-3.html">
+            <a class="services__item--button btn">
               <p>Детальніше</p>
               <img class="arrow-btn" src="images/arrow-btn.svg" alt="arrow icon" />
             </a>
@@ -755,14 +768,224 @@
     </section>
     <!-- ./Services -->
 
-    <!-- Garantee -->
-    <section class="garantee">
+    <!-- Second-Services -->
+    <section class="second-services">
       <div class="container">
-        <div class="garantee__inner">
+        <div class="services__top">
+          <div class="title">Наші <span>послуги</span>:</div>
+
+          <a class="services__link">
+            <img class="down-arrow" src="images/services/down-arrow.svg" alt="arrow icon" />
+          </a>
+        </div>
+
+        <div class="second-services__items">
+          <div class="second-services__item">
+            <div class="second-services__item--top">
+              <img src="images/second-services/1.svg" alt="service icon" />
+              <span>Вантажні перевезення будь-якого типу та складності:</span>
+            </div>
+            <p>
+              Ми організовуємо перевезення вантажів як по території України, так і за її межами,
+              включаючи країни Європейського Союзу та Азії. Незалежно від об'єму або специфіки
+              вантажу, ми забезпечуємо надійну та безпечну доставку.
+            </p>
+          </div>
+
+          <div class="second-services__item">
+            <div class="second-services__item--top">
+              <img src="images/second-services/2.svg" alt="service icon" />
+              <span>Повний документальний та брокерський супровід:</span>
+            </div>
+            <p>
+              Наші клієнти отримують повну підтримку у оформленні всіх необхідних документів та
+              брокерських послуг. Ми також надаємо допомогу з оформленням страхування та замитненням
+              у всіх країнах Європейського Союзу завдяки нашій широкій партнерській мережі.
+            </p>
+          </div>
+
+          <div class="second-services__item">
+            <div class="second-services__item--top">
+              <img src="images/second-services/3.svg" alt="service icon" />
+              <span>Швидка подача авто:</span>
+            </div>
+            <p>
+              Гарантуємо подачу автотранспорту протягом 12 годин на території України та протягом 24
+              годин у країнах Європи. Ми розуміємо важливість своєчасної доставки і докладаємо всі
+              зусилля для її забезпечення.
+            </p>
+          </div>
+
+          <div class="second-services__item">
+            <div class="second-services__item--top">
+              <img src="images/second-services/4.svg" alt="service icon" />
+              <span>Широка мережа партнерів:</span>
+            </div>
+            <p>
+              Ми співпрацюємо з більш ніж 500 компаніями, включаючи українські та іноземні
+              підприємства. Наші партнери включають компанії з аграрної галузі, будівництва,
+              торгівлі та інші важливі галузі, такі як KERNEL, Агро-Регіон, Plantagro, ROSHEN, Fozzy
+              Group, АТБ, Ельдорадо, ООН, NATO, Карітас та багато інших.
+            </p>
+          </div>
+
+          <div class="second-services__item">
+            <div class="second-services__item--top">
+              <img src="images/second-services/5.svg" alt="service icon" />
+              <span>Безпека та страхування:</span>
+            </div>
+            <p>
+              Усі вантажі застраховані на суму 4 мільйони гривень в Страховій компанії "Перша". Це
+              дозволяє покрити ризики навіть при перевезенні дороговартісних вантажів. Якщо вартість
+              вашого вантажу перевищує цю суму, ми пропонуємо вигідні умови страхування вашого
+              вантажу від наших партнерів.
+            </p>
+          </div>
+
+          <div class="second-services__item">
+            <div class="second-services__item--top">
+              <img src="images/second-services/6.svg" alt="service icon" />
+              <span>Розмаїтість автопарку:</span>
+            </div>
+            <p>
+              Наша мережа включає більше 1000 автомобілів різного типу й тонажності, що дозволяє нам
+              оптимізувати вартість перевезень і зменшити відстань подачі автотранспорту.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ./Second-Services -->
+
+    <div class="info-block">
+      <div class="container">
+        <div class="info-block__inner">
+          <div class="info-block__left">
+            <div class="title">
+              Обирайте <span>надійність</span> та <span>професіоналізм</span> разом з
+              <span>X</span>-ТРАНС.
+            </div>
+            <div class="subtitle">
+              Ми завжди на зв'язку, готові відповісти на всі ваші запити та запитання. Довірте нам
+              свої вантажі
+            </div>
+          </div>
+          <div class="info-block__right">
+            <img src="images/X.svg" alt="x icon" />
+            <a href="#" class="btn effect effect-1 info-btn">Заказать консультацию</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ticker -->
+    <div class="running-text-section">
+      <div class="running-text-container">
+        <div class="running-text">
+          <div class="ticker__text">
+            <img src="images/ticker-img.png" alt="" />
+            <p>
+              Лучшая транспортная <br />
+              компания Украины 2023
+            </p>
+          </div>
+          <div class="ticker__text">
+            <img src="images/ticker-img.png" alt="" />
+            <p>
+              Лучшая транспортная <br />
+              компания Украины 2023
+            </p>
+          </div>
+          <div class="ticker__text">
+            <img src="images/ticker-img.png" alt="" />
+            <p>
+              Лучшая транспортная <br />
+              компания Украины 2023
+            </p>
+          </div>
+          <div class="ticker__text">
+            <img src="images/ticker-img.png" alt="" />
+            <p>
+              Лучшая транспортная <br />
+              компания Украины 2023
+            </p>
+          </div>
+          <div class="ticker__text">
+            <img src="images/ticker-img.png" alt="" />
+            <p>
+              Лучшая транспортная <br />
+              компания Украины 2023
+            </p>
+          </div>
+          <div class="ticker__text">
+            <img src="images/ticker-img.png" alt="" />
+            <p>
+              Лучшая транспортная <br />
+              компания Украины 2023
+            </p>
+          </div>
+          <div class="ticker__text">
+            <img src="images/ticker-img.png" alt="" />
+            <p>
+              Лучшая транспортная <br />
+              компания Украины 2023
+            </p>
+          </div>
+          <div class="ticker__text">
+            <img src="images/ticker-img.png" alt="" />
+            <p>
+              Лучшая транспортная <br />
+              компания Украины 2023
+            </p>
+          </div>
+          <div class="ticker__text">
+            <img src="images/ticker-img.png" alt="" />
+            <p>
+              Лучшая транспортная <br />
+              компания Украины 2023
+            </p>
+          </div>
+          <div class="ticker__text">
+            <img src="images/ticker-img.png" alt="" />
+            <p>
+              Лучшая транспортная <br />
+              компания Украины 2023
+            </p>
+          </div>
+          <div class="ticker__text">
+            <img src="images/ticker-img.png" alt="" />
+            <p>
+              Лучшая транспортная <br />
+              компания Украины 2023
+            </p>
+          </div>
+          <div class="ticker__text">
+            <img src="images/ticker-img.png" alt="" />
+            <p>
+              Лучшая транспортная <br />
+              компания Украины 2023
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ./Ticker -->
+
+    <!-- Garantee -->
+    <section class="garantee about-garantee">
+      <div class="container">
+        <div class="services__top about-garantee-top">
+          <div class="title">Дотримання <span>Домовленостей</span></div>
+
+          <a class="services__link">
+            <img class="down-arrow" src="images/services/down-arrow.svg" alt="arrow icon" />
+          </a>
+        </div>
+        <div class="garantee__inner garantee__inner--about">
           <div class="garantee__left">
             <div class="license">
-              <img src="images/licence.png" alt="license img" />
-              <a data-fancybox="gallery" class="license-link" href="images/licence.png">
+              <img src="images/license-2.png" alt="license img" />
+              <a data-fancybox="gallery" class="license-link" href="images/license-2.png">
                 <div class="search-wrap">
                   <svg
                     width="154"
@@ -872,136 +1095,51 @@
           </div>
 
           <div class="garantee__right">
-            <h3 class="title">твердая <span>гарантия</span></h3>
-            <div class="subtitle">
-              Все грузы застрахованы в компании Страховая компания «Перша» на
-              <span>4 млн грн.</span>
+            <div class="subtitle garantee-subtitle">
+              Завжди дотримуємось домовленостей та працюємо згідно договору
             </div>
-            <div class="garantee__text">
-              Страховка распространяется на все типы грузов , включая грузы под температурным
-              режимом, негабаритные и опасные грузы как по Украине, так и по территории Европы
+
+            <div class="garantee-info">
+              <ul class="garantee-list">
+                <li>
+                  <img src="images/up-left-arrow.svg" alt="arrow img" />
+                  <p>
+                    Гарантуємо доставку згідно домовлених термінів подачі авто та перевезення
+                    вантажу
+                  </p>
+                </li>
+                <li>
+                  <img src="images/up-left-arrow.svg" alt="arrow img" />
+                  <p>Гарантуємо цілісність доставки та збереження вантажу.</p>
+                </li>
+                <li>
+                  <img src="images/up-left-arrow.svg" alt="arrow img" />
+                  <p>
+                    Усі додаткові витрати, в процесі організації та виконання перевезення, понесені
+                    з вини нашої компанії
+                  </p>
+                </li>
+                <li>
+                  <img src="images/up-left-arrow.svg" alt="arrow img" />
+                  <p>відшкодовуємо згідно попередніх домовленостей!</p>
+                </li>
+                <li>
+                  <img src="images/up-left-arrow.svg" alt="arrow img" />
+                  <p>
+                    Усі вантажі, які перевозяться компанією Х-ТРАНС,
+                    <span>застраховані на 4 млн грн</span> по одному страховому випадку та на 5 млн
+                    грн по контракту.
+                  </p>
+                </li>
+              </ul>
             </div>
-            <a class="effect effect-1" href="">Заказать консультацию</a>
+
+            <a href="#" class="btn garantee__about--btn">Заказать консультацию</a>
           </div>
         </div>
       </div>
     </section>
     <!-- ./Garantee -->
-
-    <!-- Ticker -->
-    <div class="running-text-section">
-      <div class="running-text-container">
-        <div class="running-text">
-          <div class="ticker__text">
-            <img src="images/ticker-img.png" alt="" />
-            <p>
-              Лучшая транспортная <br />
-              компания Украины 2023
-            </p>
-          </div>
-          <div class="ticker__text">
-            <img src="images/ticker-img.png" alt="" />
-            <p>
-              Лучшая транспортная <br />
-              компания Украины 2023
-            </p>
-          </div>
-          <div class="ticker__text">
-            <img src="images/ticker-img.png" alt="" />
-            <p>
-              Лучшая транспортная <br />
-              компания Украины 2023
-            </p>
-          </div>
-          <div class="ticker__text">
-            <img src="images/ticker-img.png" alt="" />
-            <p>
-              Лучшая транспортная <br />
-              компания Украины 2023
-            </p>
-          </div>
-          <div class="ticker__text">
-            <img src="images/ticker-img.png" alt="" />
-            <p>
-              Лучшая транспортная <br />
-              компания Украины 2023
-            </p>
-          </div>
-          <div class="ticker__text">
-            <img src="images/ticker-img.png" alt="" />
-            <p>
-              Лучшая транспортная <br />
-              компания Украины 2023
-            </p>
-          </div>
-          <div class="ticker__text">
-            <img src="images/ticker-img.png" alt="" />
-            <p>
-              Лучшая транспортная <br />
-              компания Украины 2023
-            </p>
-          </div>
-          <div class="ticker__text">
-            <img src="images/ticker-img.png" alt="" />
-            <p>
-              Лучшая транспортная <br />
-              компания Украины 2023
-            </p>
-          </div>
-          <div class="ticker__text">
-            <img src="images/ticker-img.png" alt="" />
-            <p>
-              Лучшая транспортная <br />
-              компания Украины 2023
-            </p>
-          </div>
-          <div class="ticker__text">
-            <img src="images/ticker-img.png" alt="" />
-            <p>
-              Лучшая транспортная <br />
-              компания Украины 2023
-            </p>
-          </div>
-          <div class="ticker__text">
-            <img src="images/ticker-img.png" alt="" />
-            <p>
-              Лучшая транспортная <br />
-              компания Украины 2023
-            </p>
-          </div>
-          <div class="ticker__text">
-            <img src="images/ticker-img.png" alt="" />
-            <p>
-              Лучшая транспортная <br />
-              компания Украины 2023
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- ./Ticker -->
-
-    <!-- Team -->
-    <section class="team">
-      <div class="container">
-        <div class="team__inner">
-          <div class="team__left">
-            <h3 class="title">с нами <span>надежно</span></h3>
-
-            <div class="subtitle">
-              Наша компания признана лучшей транспортной компанией 2023 г. во все -украинской
-              номинации <span>«Вибір країни»</span>
-            </div>
-
-            <img src="images/medal.png" alt="medal img" />
-          </div>
-          <div class="team__right">
-            <img src="images/team.png" alt="team" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ./Team -->
 
     <!-- Application -->
     <section class="application">
@@ -1014,7 +1152,7 @@
               і ми гарантуємо подачу авто вже сьогодні
             </div>
 
-            <a class="effect effect-1" href="#">Заказать консультацию</a>
+            <a class="btn effect effect-1" href="#">Заказать консультацию</a>
 
             <div class="mobile-img mobile-img--second">
               <img src="images/red-cars.png" alt="cars img" />
@@ -1024,539 +1162,6 @@
       </div>
     </section>
     <!-- ./Application -->
-
-    <!-- Types -->
-    <section class="types">
-      <div class="container">
-        <div class="types__inner">
-          <div class="types__top">
-            <div class="types__top--left">
-              <h3 class="title types__title">
-                В нашій партнерській мережі <span>більше 2000 авто</span> різного типу та тонажності
-              </h3>
-              <div class="subtitle">Виконуємо перевезення від 100 кг до 100т</div>
-            </div>
-            <a class="types__top--right" href="#">
-              <img src="images/services/down-arrow.svg" alt="arrow" />
-            </a>
-          </div>
-
-          <div class="types__items">
-            <div class="types__item">
-              <img class="item-img" src="images/types/1.png" alt="track" />
-              <div class="types__item--title">авто до <span>3т</span></div>
-
-              <ul class="types__settings--list">
-                <li>
-                  <div class="left__info">
-                    <img src="images/types/icons/track.svg" alt="icon" />
-                    <p>Тип кузову:</p>
-                  </div>
-                  <div class="right__info">
-                    тентований, відкритий, рефрижератор, ізотерм, цільнометалевий
-                  </div>
-                </li>
-                <li>
-                  <div class="left__info">
-                    <img src="images/types/icons/size.svg" alt="icon" />
-                    <p>Розміри (Д/Ш/В):</p>
-                  </div>
-                  <div class="right__info">4м/2м/2м</div>
-                </li>
-                <li>
-                  <div class="left__info">
-                    <img src="images/types/icons/size-2.svg" alt="icon" />
-                    <p>Обʼєм:</p>
-                  </div>
-                  <div class="right__info">20м3</div>
-                </li>
-              </ul>
-            </div>
-
-            <div class="types__item">
-              <img class="item-img" src="images/types/2.png" alt="track" />
-              <div class="types__item--title">авто до <span>5т</span></div>
-
-              <ul class="types__settings--list">
-                <li>
-                  <div class="left__info">
-                    <img src="images/types/icons/track.svg" alt="icon" />
-                    <p>Тип кузову:</p>
-                  </div>
-                  <div class="right__info">
-                    тентований, відкритий, рефрижератор, ізотерм, цільнометалевий
-                  </div>
-                </li>
-                <li>
-                  <div class="left__info">
-                    <img src="images/types/icons/size.svg" alt="icon" />
-                    <p>Розміри (Д/Ш/В):</p>
-                  </div>
-                  <div class="right__info">7м/2,45м/2,7м</div>
-                </li>
-                <li>
-                  <div class="left__info">
-                    <img src="images/types/icons/size-2.svg" alt="icon" />
-                    <p>Обʼєм:</p>
-                  </div>
-                  <div class="right__info">45м3</div>
-                </li>
-              </ul>
-            </div>
-
-            <div class="types__item">
-              <img class="item-img" src="images/types/3.png" alt="track" />
-              <div class="types__item--title">авто до <span>10т</span></div>
-
-              <ul class="types__settings--list">
-                <li>
-                  <div class="left__info">
-                    <img src="images/types/icons/track.svg" alt="icon" />
-                    <p>Тип кузову:</p>
-                  </div>
-                  <div class="right__info">
-                    тентований, відкритий, рефрижератор, ізотерм, цільнометалевий
-                  </div>
-                </li>
-                <li>
-                  <div class="left__info">
-                    <img src="images/types/icons/size.svg" alt="icon" />
-                    <p>Розміри (Д/Ш/В):</p>
-                  </div>
-                  <div class="right__info">8м/2,45м/2,8м</div>
-                </li>
-                <li>
-                  <div class="left__info">
-                    <img src="images/types/icons/size-2.svg" alt="icon" />
-                    <p>Обʼєм:</p>
-                  </div>
-                  <div class="right__info">55м3</div>
-                </li>
-              </ul>
-            </div>
-
-            <div class="types__item">
-              <img class="item-img" src="images/types/4.png" alt="track" />
-              <div class="types__item--title">авто до <span>22т</span></div>
-
-              <ul class="types__settings--list">
-                <li>
-                  <div class="left__info">
-                    <img src="images/types/icons/track.svg" alt="icon" />
-                    <p>Тип кузову:</p>
-                  </div>
-                  <div class="right__info">
-                    тентований, відкритий, рефрижератор, ізотерм, цільнометалевий
-                  </div>
-                </li>
-                <li>
-                  <div class="left__info">
-                    <img src="images/types/icons/size.svg" alt="icon" />
-                    <p>Розміри (Д/Ш/В):</p>
-                  </div>
-                  <div class="right__info">13,6м/2,45м/3м</div>
-                </li>
-                <li>
-                  <div class="left__info">
-                    <img src="images/types/icons/size-2.svg" alt="icon" />
-                    <p>Обʼєм:</p>
-                  </div>
-                  <div class="right__info">100м3</div>
-                </li>
-              </ul>
-            </div>
-
-            <div class="types__item">
-              <img class="item-img" src="images/types/5.png" alt="track" />
-              <div class="types__item--title">авто до <span>25т</span></div>
-
-              <ul class="types__settings--list">
-                <li>
-                  <div class="left__info">
-                    <img src="images/types/icons/track.svg" alt="icon" />
-                    <p>Тип кузову:</p>
-                  </div>
-                  <div class="right__info">зерновоз</div>
-                </li>
-                <li>
-                  <div class="left__info">
-                    <img src="images/types/icons/size.svg" alt="icon" />
-                    <p>Розміри (Д/Ш/В):</p>
-                  </div>
-                  <div class="right__info">11м/2,4м/2м</div>
-                </li>
-                <li>
-                  <div class="left__info">
-                    <img src="images/types/icons/size-2.svg" alt="icon" />
-                    <p>Обʼєм:</p>
-                  </div>
-                  <div class="right__info">55м3</div>
-                </li>
-              </ul>
-            </div>
-
-            <div class="types__item">
-              <img class="item-img" src="images/types/6.png" alt="track" />
-              <div class="types__item--title">авто до <span>25т</span></div>
-
-              <ul class="types__settings--list">
-                <li>
-                  <div class="left__info">
-                    <img src="images/types/icons/track.svg" alt="icon" />
-                    <p>Тип кузову:</p>
-                  </div>
-                  <div class="right__info">самоскид</div>
-                </li>
-                <li>
-                  <div class="left__info">
-                    <img src="images/types/icons/size.svg" alt="icon" />
-                    <p>Розміри (Д/Ш/В):</p>
-                  </div>
-                  <div class="right__info">8м/2м/2,4м</div>
-                </li>
-                <li>
-                  <div class="left__info">
-                    <img src="images/types/icons/size-2.svg" alt="icon" />
-                    <p>Обʼєм:</p>
-                  </div>
-                  <div class="right__info">40м3</div>
-                </li>
-              </ul>
-            </div>
-
-            <div class="types__item">
-              <img class="item-img" src="images/types/7.png" alt="track" />
-              <div class="types__item--title">авто до <span>100т</span></div>
-
-              <ul class="types__settings--list">
-                <li>
-                  <div class="left__info">
-                    <img src="images/types/icons/track.svg" alt="icon" />
-                    <p>Тип кузову:</p>
-                  </div>
-                  <div class="right__info">трали</div>
-                </li>
-                <li>
-                  <div class="left__info">
-                    <img src="images/types/icons/size.svg" alt="icon" />
-                    <p>Розміри (Д/Ш/В):</p>
-                  </div>
-                  <div class="right__info">19м/3м/0,6м</div>
-                </li>
-                <li>
-                  <div class="left__info">
-                    <img src="images/types/icons/size-2.svg" alt="icon" />
-                    <p>Обʼєм:</p>
-                  </div>
-                  <div class="right__info">-</div>
-                </li>
-              </ul>
-            </div>
-
-            <div class="types__item">
-              <img class="item-img" src="images/types/8.png" alt="track" />
-              <div class="types__item--title">авто до <span>40т</span></div>
-
-              <ul class="types__settings--list">
-                <li>
-                  <div class="left__info">
-                    <img src="images/types/icons/track.svg" alt="icon" />
-                    <p>Тип кузову:</p>
-                  </div>
-                  <div class="right__info">контейнеровоз</div>
-                </li>
-                <li>
-                  <div class="left__info">
-                    <img src="images/types/icons/size.svg" alt="icon" />
-                    <p>Розміри (Д/Ш/В):</p>
-                  </div>
-                  <div class="right__info">12м/2,4м/2,6м</div>
-                </li>
-                <li>
-                  <div class="left__info">
-                    <img src="images/types/icons/size-2.svg" alt="icon" />
-                    <p>Обʼєм:</p>
-                  </div>
-                  <div class="right__info">75м3</div>
-                </li>
-              </ul>
-            </div>
-
-            <div class="types__item">
-              <img class="item-img" src="images/types/9.png" alt="track" />
-              <div class="types__item--title">авто до <span>25т</span></div>
-
-              <ul class="types__settings--list">
-                <li>
-                  <div class="left__info">
-                    <img src="images/types/icons/track.svg" alt="icon" />
-                    <p>Тип кузову:</p>
-                  </div>
-                  <div class="right__info">
-                    цистерна харчова, цистерна хімічна. Мають підігрів, паровий рукав
-                  </div>
-                </li>
-                <li>
-                  <div class="left__info">
-                    <img src="images/types/icons/size.svg" alt="icon" />
-                    <p>Розміри (Д/Ш/В):</p>
-                  </div>
-                  <div class="right__info">-</div>
-                </li>
-                <li>
-                  <div class="left__info">
-                    <img src="images/types/icons/size-2.svg" alt="icon" />
-                    <p>Обʼєм:</p>
-                  </div>
-                  <div class="right__info">40м3</div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ./Types -->
-
-    <!-- Steps -->
-    <section class="steps">
-      <div class="container">
-        <div class="steps__inner">
-          <div class="steps__left">
-            <h3 class="title steps__title"><span>етапи</span> надання послуг</h3>
-            <img class="steps__img" src="images/steps/map.png" alt="earth img" />
-          </div>
-          <div class="steps__right">
-            <ol>
-              <li>
-                <div class="step__item">
-                  <img src="images/steps/1.svg" alt="icon" />
-                  <span>Ви подаєте заявку на доставку вантажу</span>
-                </div>
-              </li>
-              <li>
-                <div class="step__item">
-                  <img src="images/steps/2.svg" alt="icon" />
-                  <span>Ми оперативно обробляємо заявку </span>
-                </div>
-              </li>
-              <li>
-                <div class="step__item">
-                  <img src="images/steps/3.svg" alt="icon" />
-                  <span>Аналізуємо і пропонуємо найкращі варіанти</span>
-                </div>
-              </li>
-              <li>
-                <div class="step__item">
-                  <img src="images/steps/4.svg" alt="icon" />
-                  <span>Погоджуємо всі деталі і підписуємо документи</span>
-                </div>
-              </li>
-              <li>
-                <div class="step__item">
-                  <img src="images/steps/5.svg" alt="icon" />
-                  <span>Організовуємо авто на завантаження</span>
-                </div>
-              </li>
-              <li>
-                <div class="step__item">
-                  <img src="images/steps/6.svg" alt="icon" />
-                  <span>Контролюємо та інформуємо про статус вашого вантажу 24/7 заявку </span>
-                </div>
-              </li>
-              <li>
-                <div class="step__item">
-                  <img src="images/steps/7.svg" alt="icon" />
-                  <span>Контролюємо вивантаження та підписання супровідних документів</span>
-                </div>
-              </li>
-              <li>
-                <div class="step__item">
-                  <img src="images/steps/8.svg" alt="icon" />
-                  <span>Здійснюємо доставку</span>
-                </div>
-              </li>
-              <li>
-                <div class="step__item">
-                  <img src="images/steps/9.svg" alt="icon" />
-                  <span>Готуємо та відправляємо оригінали документів</span>
-                </div>
-              </li>
-            </ol>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ./Steps -->
-
-    <!-- Quiz -->
-    <section class="quiz">
-      <div class="container">
-        <div class="quiz__inner">
-          <div class="quiz__left">
-            <h3 class="title">Залишіть <span>заявку</span></h3>
-            <div class="subtitle quiz__subtitle">
-              і ми прорахуємо, яку вигоду ви отримаєте працюючи з нами
-            </div>
-            <div class="quiz-container">
-              <div class="quiz-step active current-step" id="step1">
-                <div class="quiz-step__wrap">
-                  <div class="quiz-count__wrap">
-                    <span class="quiz-count">1</span>
-                    Пункт завантаження:
-                  </div>
-                  <input
-                    type="text"
-                    placeholder="Город отправления"
-                    id="city"
-                    name="city"
-                    required
-                  />
-                </div>
-                <br />
-                <div class="quiz-step__wrap">
-                  <div class="quiz-count__wrap">
-                    <span class="quiz-count">2</span>
-                    Пункт розвантаження:
-                  </div>
-                  <input
-                    type="text"
-                    placeholder="Город выгрузки"
-                    id="deliveryCity"
-                    name="deliveryCity"
-                    required
-                  />
-                </div>
-                <br />
-                <div class="quiz-step__wrap">
-                  <div class="quiz-count__wrap">
-                    <span class="quiz-count">3</span>
-                    Орієнтовна дата відправки:
-                  </div>
-                  <input type="date" id="date" name="date" required />
-                </div>
-                <br />
-                <div class="step-indicator">
-                  <div class="step-wrap">
-                    <span id="stepIndicator">1</span><span class="white">/ 3</span>
-                  </div>
-                  <div class="btn-wrapper">
-                    <button class="btn mobile" onclick="nextStep()">Продолжить</button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="quiz-step" id="step2">
-                <div class="quiz-step__wrap">
-                  <div class="quiz-count__wrap">
-                    <span class="quiz-count">4</span>
-                    Тип вантажу
-                  </div>
-                  <input type="text" placeholder="Тип вантажу" id="city2" name="city2" required />
-                </div>
-                <br />
-                <div class="quiz-step__wrap">
-                  <div class="quiz-count__wrap">
-                    <span class="quiz-count">5</span>
-                    Вага
-                  </div>
-                  <input
-                    type="text"
-                    placeholder="Вага"
-                    id="deliveryCity2"
-                    name="deliveryCity2"
-                    required
-                  />
-                </div>
-                <br />
-                <div class="quiz-step__wrap">
-                  <div class="quiz-count__wrap">
-                    <span class="quiz-count">6</span>
-                    Розміри вантажу та пакування
-                  </div>
-                  <input
-                    type="text"
-                    placeholder="Розміри вантажу та пакування"
-                    id="date2"
-                    name="date2"
-                    required
-                  />
-                </div>
-                <br />
-                <div class="step-indicator">
-                  <div class="step-wrap">
-                    <span id="stepIndicator">2</span><span class="white">/ 3</span>
-                  </div>
-                  <div class="btn-wrapper">
-                    <button class="prev-btn" onclick="prevStep()">Назад</button>
-                    <button class="btn" onclick="nextStep()">Продолжить</button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="quiz-step" id="step3">
-                <div class="quiz-step__wrap">
-                  <div class="quiz-count__wrap">
-                    <span class="quiz-count">7</span>
-                    Додаткова інформація
-                  </div>
-                  <input
-                    type="text"
-                    placeholder="Додаткова інформація"
-                    id="city3"
-                    name="city3"
-                    required
-                  />
-                </div>
-                <br />
-                <div class="quiz-step__wrap">
-                  <div class="quiz-count__wrap">
-                    <span class="quiz-count">8</span>
-                    Імʼя Прізвище (посада)
-                  </div>
-                  <input
-                    type="text"
-                    placeholder="Імʼя Прізвище (посада)"
-                    id="deliveryCity3"
-                    name="deliveryCity3"
-                    required
-                  />
-                </div>
-                <br />
-                <div class="quiz-step__wrap">
-                  <div class="quiz-count__wrap">
-                    <span class="quiz-count">9</span>
-                    Номер телефону
-                  </div>
-                  <input
-                    type="tel"
-                    placeholder="+380 (__) ___ __ __"
-                    id="date3"
-                    name="date3"
-                    required
-                  />
-                </div>
-                <br />
-                <div class="step-indicator">
-                  <div class="step-wrap">
-                    <span id="stepIndicator">3</span><span class="white">/ 3</span>
-                  </div>
-                  <div class="btn-wrapper">
-                    <button class="prev-btn" onclick="prevStep()">Назад</button>
-                    <button class="btn last" onclick="nextStep()">Залишити заявку</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="mobile-img">
-              <img src="images/hands.png" alt="hands image" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ./Quiz -->
 
     <!-- Clients -->
     <section class="clients">
@@ -1653,7 +1258,7 @@
                     </div>
 
                     <div class="cases__bottom">
-                      <a href="" class="effect effect-1 cases__btn">Детальніше</a>
+                      <a href="" class="effect effect-1 cases__btn effect effect-1">Детальніше</a>
                       <div class="cases__bottom--crumbs">
                         <a href="#">Перевезення до 3т</a>
                         <a href="#">Перевезення тент</a>
@@ -1706,7 +1311,7 @@
                     </div>
 
                     <div class="cases__bottom">
-                      <a href="" class="effect effect-1 cases__btn">Детальніше</a>
+                      <a href="" class="effect effect-1 cases__btn effect effect-1">Детальніше</a>
                       <div class="cases__bottom--crumbs">
                         <a href="#">Перевезення до 3т</a>
                         <a href="#">Перевезення тент</a>
@@ -1753,7 +1358,7 @@
                     </div>
 
                     <div class="cases__bottom">
-                      <a href="" class="effect effect-1 cases__btn">Детальніше</a>
+                      <a href="" class="effect effect-1 cases__btn effect effect-1">Детальніше</a>
                       <div class="cases__bottom--crumbs">
                         <a href="#">Перевезення до 3т</a>
                         <a href="#">Перевезення тент</a>
@@ -1771,62 +1376,6 @@
     </section>
     <!-- ./Cases -->
 
-    <!-- Info -->
-    <section class="info">
-      <div class="container">
-        <div class="info__inner">
-          <div class="info__content">
-            <div class="types__top">
-              <div class="types__top--left">
-                <h3 class="title types__title">
-                  Транспортная компания <br />
-                  <span>X-Trans</span>
-                </h3>
-              </div>
-              <a class="types__top--right" href="#">
-                <img src="images/services/down-arrow.svg" alt="arrow" />
-              </a>
-            </div>
-
-            <div class="info__body">
-              <div class="info__body--item">
-                <img src="images/up-left-arrow.svg" alt="arrow icon" />
-                <p>
-                  "<span>X</span>-<span class="white">Trans</span> " - транспортна компанія, що
-                  здійснює транспортування вантажу в будь-яку точку міста, країни та світу. Ми
-                  готові доставити по містах, Україні, Європі, Азії, а також в країни далекого і
-                  ближнього СНД. Пропонуємо найбільш зручний спосіб перевезення, виходячи з вимог по
-                  швидкості і вартості транспортування – доставимо за допомогою авіаліній, морського
-                  транспорту або залізниць. Кожен клієнт може скористатися послугами збірної або
-                  попутного транспортування – таким чином, замовник розділяє витрати з іншими
-                  клієнтами.
-                </p>
-              </div>
-              <div class="info__body--item info__body--item-hide">
-                <img src="images/up-left-arrow.svg" alt="arrow icon" />
-                <p>
-                  "<span>X</span>-<span class="white">Trans</span>" компанія, яка економить час
-                  своїх клієнтів. За 2 хвилини ми проконсультуємо, складемо заявку, розрахуємо
-                  вартість і підберемо автомобіль. Вантажна машина прибуває в вказане місце вже
-                  через 2 години, незалежно від ситуації на дорогах і дальності адреси. Величезна
-                  партнерська мережа, де налічується понад 3000 автомобілів, дозволяє нам не наймати
-                  посередників, працюючи з замовником безпосередньо. Це вберігає клієнта від низької
-                  якості послуг і дозволяє встановлювати ціни на 7-9% нижчими від ринкових.
-                  Оптимальні логістичні рішення, перевірені маршрути та чесні водії – це те, що
-                  допомагає здійснювати перевезення завжди вчасно. Завдяки злагодженій роботі та
-                  комплексному підходу, наші автомобілі не затримуються, а ризик виникнення
-                  форс-мажорних ситуації зводиться до мінімуму.
-                </p>
-              </div>
-            </div>
-
-            <button id="btn-open">Развернуть</button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ./Info -->
-
     <!-- Application-2 -->
     <section class="application-second">
       <div class="container">
@@ -1842,7 +1391,7 @@
                 залишіть заявку і ми безкоштовно надамо консультацію
               </div>
 
-              <a class="effect effect-1" href="#">Заказать консультацию</a>
+              <a class="btn effect effect-1" href="#">Заказать консультацию</a>
             </div>
 
             <div class="application__left--second">

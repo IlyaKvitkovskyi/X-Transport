@@ -23,3 +23,6 @@ document.getElementById('btn-open').addEventListener('click', function () {
     btn.innerText = 'Свернуть';
   }
 });
+
+
+
