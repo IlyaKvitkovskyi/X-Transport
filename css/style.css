@@ -274,6 +274,10 @@ body {
   align-items: center;
 }
 
+.logo {
+  width: 155px;
+}
+
 .nav__list {
   display: flex;
   align-items: center;
@@ -330,9 +334,7 @@ body {
 }
 
 .submenu {
-  display: flex;
-  flex-direction: column;
-  opacity: 0;
+  display: none;
   position: absolute;
   top: 57px;
   left: -15px;
@@ -367,7 +369,11 @@ body {
 }
 
 .nav__item:hover .submenu {
-  opacity: 1;
+  height: 416px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: -126px;
 }
 
 .submenu-2 {
@@ -376,11 +382,11 @@ body {
   position: absolute;
   left: 100%;
   top: 0;
-  opacity: 0;
+  display: none;
 }
 
 .submenu__item:hover .submenu-2 {
-  opacity: 1;
+  display: block;
   z-index: 999;
 }
 
@@ -405,13 +411,13 @@ body {
   display: flex;
   flex-direction: column;
   position: absolute;
-  opacity: 0;
+  display: none;
   left: 100%;
   top: 0;
 }
 
 .submenu__item--2:hover .submenu-3 {
-  opacity: 1;
+  display: block;
 }
 
 .submenu__item--3 {
@@ -529,11 +535,11 @@ body {
 .categories-intro__right {
   top: 0;
   bottom: 0;
-  max-width: 60%;
 }
 
 .categories-intro__right img {
-  height: 600px;
+  max-height: 600px;
+  max-width: 945px;
 }
 
 .categories__title--main {
@@ -1421,6 +1427,10 @@ ol li:last-child:before {
   height: 50px;
 }
 
+.steps__img {
+  max-width: 500px;
+}
+
 .steps__title {
   margin-bottom: 90px;
 }
@@ -2018,6 +2028,16 @@ a.footer__text:hover {
 }
 
 @media (max-width: 1240px) {
+  .categories-intro__right {
+    display: none !important;
+  }
+
+  .categories-mobile-img {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
   .intro__right {
     display: flex;
     justify-content: flex-end;
@@ -2030,6 +2050,10 @@ a.footer__text:hover {
   .intro {
     height: 700px;
     padding-top: 80px;
+  }
+
+  .categories-intro {
+    height: 100%;
   }
 
   .intro__title--top {
@@ -2659,6 +2683,10 @@ a.footer__text:hover {
 
   .application {
     padding-bottom: 0px;
+  }
+
+  .application-about {
+    padding-bottom: 80px;
   }
 
   .application__inner {

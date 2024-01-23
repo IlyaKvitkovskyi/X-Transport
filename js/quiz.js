@@ -3,6 +3,20 @@ const totalSteps = 3;
 
 function nextStep() {
   const currentStepElement = document.getElementById(`step${currentStep}`);
+  const inputs = currentStepElement.querySelectorAll('input[required]');
+  let isValid = true;
+
+  inputs.forEach(input => {
+    if (!input.value.trim()) {
+      isValid = false;
+    }
+  });
+
+  if (!isValid) {
+    // Если хотя бы одно обязательное поле не заполнено, выход из функции
+    return;
+  }
+
   currentStepElement.classList.remove('active', 'current-step');
   currentStep++;
 
@@ -11,9 +25,10 @@ function nextStep() {
     nextStepElement.classList.add('active', 'current-step');
     updateStepIndicator();
   } else {
-    alert('Квиз завершен!');
+    // alert('Квиз завершен!');
   }
 }
+
 
 function prevStep() {
   if (currentStep > 1) {
