@@ -2480,6 +2480,7 @@ a.footer__text:hover {
 
   .team__right {
     margin-left: 0;
+    margin-top: 70px;
   }
 
   .application__inner {
@@ -2765,6 +2766,10 @@ a.footer__text:hover {
 
   .info__body--item {
     flex-direction: column;
+  }
+
+  .red {
+    color: #FF4D29;
   }
 
   .info__body--item img {
