@@ -18,7 +18,6 @@ function destroySwiper() {
   }
 }
 
-// Проверка разрешения экрана при загрузке и изменении размера окна
 window.addEventListener('load', function () {
   if (window.innerWidth < 1240) {
     destroySwiper();

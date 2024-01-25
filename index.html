@@ -7,7 +7,7 @@
     <link rel="icon" type="image/png" href="favicon.png" />
 
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/style.css?=v1.4" />
+    <link rel="stylesheet" href="css/style.css?=v1.5" />
     <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
     <title>X-Transport</title>
     <script src="js/burger.js"></script>
@@ -1459,7 +1459,7 @@
 
             <p class="intro__text">Сделаем вашу перевозку выгоднее до <span>10-15%</span></p>
 
-            <a class="btn effect effect-1" href="#" title="Learn More">Заказать консультацию </a>
+            <a class="popup-open effect effect-1" href="#" title="Learn More">Заказать консультацию </a>
 
             <div class="mobile-img">
               <img src="images/mobile-truck.png" alt="truck img" />
@@ -1773,7 +1773,7 @@
               Страховка распространяется на все типы грузов , включая грузы под температурным
               режимом, негабаритные и опасные грузы как по Украине, так и по территории Европы
             </div>
-            <a class="btn effect effect-1" href="">Заказать консультацию</a>
+            <a class="popup-open effect effect-1" href="#">Заказать консультацию</a>
           </div>
         </div>
       </div>
@@ -1906,7 +1906,7 @@
               і ми гарантуємо подачу авто вже сьогодні
             </div>
 
-            <a class="btn effect effect-1" href="#">Заказать консультацию</a>
+            <a class="popup-open effect effect-1" href="#">Заказать консультацию</a>
 
             <div class="mobile-img mobile-img--second">
               <img src="images/red-cars.png" alt="cars img" />
@@ -2734,7 +2734,7 @@
                 залишіть заявку і ми безкоштовно надамо консультацію
               </div>
 
-              <a class="btn effect effect-1" href="#">Заказать консультацию</a>
+              <a class="popup-open effect effect-1" href="#">Заказать консультацию</a>
             </div>
 
             <div class="application__left--second">
@@ -2931,115 +2931,45 @@
     </footer>
     <!-- ./Footer -->
 
-    <style>
-      .popup-wrapper {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 999;
-        backdrop-filter: blur(5px); /* Размытие фона */
-      }
 
-      .popup {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 300px;
-        height: 500px;
-        background-color: #28292d;
-        color: #fff;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-      }
-
-      .popup-content {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-      }
-
-      .popup h2 {
-        margin-bottom: 10px;
-      }
-
-      .popup label {
-        margin-bottom: 5px;
-      }
-
-      .popup input {
-        padding: 8px;
-        margin-bottom: 10px;
-      }
-
-      .popup button {
-        padding: 10px;
-        background-color: #fff;
-        color: #28292d;
-        cursor: pointer;
-        border: none;
-        border-radius: 5px;
-      }
-
-      .close-btn {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        font-size: 20px;
-        color: #fff;
-        background: none;
-        border: none;
-        cursor: pointer;
-      }
-    </style>
-
+    <!-- Popup -->
     <div class="popup-wrapper" id="popupWrapper">
       <div class="blur-background"></div>
       <div class="popup" id="popup">
         <div class="popup-content">
           <h2>Оставить заявку</h2>
           <form>
-            <label for="name">Имя:</label>
-            <input type="text" id="name" name="name" required />
+            <div class="input-wrap">
+              <label for="name">Имя:</label>
+              <input type="text" id="name" name="name" placeholder="Имя" required />
+            </div>
 
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required />
+            <div class="input-wrap">
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" name="email" placeholder="E-mail" required />
+              <span id="email-error" class="error-message">Введите email корректно</span>
+            </div>
 
-            <label for="phone">Номер телефона:</label>
-            <input type="tel" id="phone" name="phone" required />
+            <div class="input-wrap">
+              <label for="phone">Номер телефона:</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="+380 (__) ___ __ __"
+                required
+              />
+            </div>
 
-            <button type="submit">Отправить</button>
+            <button class="btn send-btn" type="submit">Отправить</button>
           </form>
         </div>
-        <button class="close-btn" id="closeBtn">&times;</button>
+        <button class="close-btn" id="closeBtn">
+          <img src="images/close.svg" alt="close icon" />
+        </button>
       </div>
     </div>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        const btns = document.querySelectorAll('.btn');
-        const popup = document.getElementById('popupWrapper');
-        const closeBtn = document.getElementById('closeBtn');
-        const htmlElement = document.documentElement;
-
-        btns.forEach(function (btn) {
-          btn.addEventListener('click', function () {
-            htmlElement.classList.add('lock'); // Добавляем класс lock к html
-            popup.style.display = 'block';
-          });
-        });
-
-        closeBtn.addEventListener('click', function () {
-          htmlElement.classList.remove('lock'); // Удаляем класс lock из html
-          popup.style.display = 'none';
-        });
-      });
-    </script>
+    <!-- ./Popup -->
 
     <script src="js/swiper-bundle.min.js"></script>
 

@@ -7,7 +7,7 @@
     <link rel="icon" type="image/png" href="favicon.png" />
 
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css?=v1.5" />
     <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
     <title>X-Transport</title>
     <script src="js/burger.js"></script>
@@ -1459,7 +1459,7 @@
 
             <p class="intro__text">Сделаем вашу перевозку выгоднее до <span>10-15%</span></p>
 
-            <a class="effect effect-1" href="#">Заказать консультацию</a>
+            <a class="effect effect-1 popup-open" href="#">Заказать консультацию</a>
 
             <div class="mobile-img categories-mobile-img">
               <img src="images/intro-2-mob.png" alt="truck img" />
@@ -1755,7 +1755,7 @@
               і ми гарантуємо подачу авто вже сьогодні
             </div>
 
-            <a class="btn effect effect-1" href="#">Заказать консультацию</a>
+            <a class="btn effect effect-1 popup-open" href="#">Заказать консультацию</a>
 
             <div class="mobile-img mobile-img--second">
               <img src="images/red-cars.png" alt="cars img" />
@@ -2185,7 +2185,7 @@
               Страховка распространяется на все типы грузов , включая грузы под температурным
               режимом, негабаритные и опасные грузы как по Украине, так и по территории Европы
             </div>
-            <a class="btn effect effect-1" href="">Заказать консультацию</a>
+            <a class="btn effect effect-1 popup-open" href="">Заказать консультацию</a>
           </div>
         </div>
       </div>
@@ -2904,7 +2904,7 @@
                 залишіть заявку і ми безкоштовно надамо консультацію
               </div>
 
-              <a class="btn effect effect-1" href="#">Заказать консультацию</a>
+              <a class="btn effect effect-1 popup-open" href="#">Заказать консультацию</a>
             </div>
 
             <div class="application__left--second">
@@ -3100,6 +3100,46 @@
       </div>
     </footer>
     <!-- ./Footer -->
+
+
+    <!-- Popup -->
+    <div class="popup-wrapper" id="popupWrapper">
+      <div class="blur-background"></div>
+      <div class="popup" id="popup">
+        <div class="popup-content">
+          <h2>Оставить заявку</h2>
+          <form>
+            <div class="input-wrap">
+              <label for="name">Имя:</label>
+              <input type="text" id="name" name="name" placeholder="Имя" required />
+            </div>
+
+            <div class="input-wrap">
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" name="email" placeholder="E-mail" required />
+              <span id="email-error" class="error-message">Введите email корректно</span>
+            </div>
+
+            <div class="input-wrap">
+              <label for="phone">Номер телефона:</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="+380 (__) ___ __ __"
+                required
+              />
+            </div>
+
+            <button class="btn send-btn" type="submit">Отправить</button>
+          </form>
+        </div>
+        <button class="close-btn" id="closeBtn">
+          <img src="images/close.svg" alt="close icon" />
+        </button>
+      </div>
+    </div>
+    <!-- ./Popup -->
 
     <script src="js/swiper-bundle.min.js"></script>
 
