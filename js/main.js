@@ -1,13 +1,18 @@
 // Burger menu
 function toggleMenu() {
-  var burgerMenu = document.getElementById('burgerMenu');
+  let burgerMenu = document.getElementById('burgerMenu');
   burgerMenu.style.display =
     burgerMenu.style.display === 'none' || burgerMenu.style.display === '' ? 'block' : 'none';
 }
 
-document.getElementById('burger').addEventListener('click', function () {
+document.getElementById('burger-btn').addEventListener('click', function () {
   this.classList.toggle('active');
-  document.documentElement.classList.toggle('lock');
+
+  let burgerMenu = document.getElementById('burgerMenu');
+  burgerMenu.classList.toggle('active');
+
+  let header = document.querySelector('.header');
+  header.classList.toggle('active');
 });
 
 // Accordion
@@ -23,6 +28,3 @@ document.getElementById('btn-open').addEventListener('click', function () {
     btn.innerText = 'Свернуть';
   }
 });
-
-
-
