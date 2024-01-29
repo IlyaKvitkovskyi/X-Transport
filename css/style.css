@@ -319,7 +319,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  right: 0;
+  right: 8px;
   top: 2px;
   opacity: 0;
   height: 100%;
@@ -399,15 +399,15 @@ body {
   margin-right: 5px;
 }
 
-.nav__link.active {
+.lang.active {
   color: #ff4d29;
   z-index: 9999;
 }
 
 #lang {
-  border: 1px solid var(--Stroke, #28292D);
-background: #1A1B1D;
-padding: 10px;
+  border: 1px solid var(--Stroke, #28292d);
+  background: #1a1b1d;
+  padding: 10px;
 }
 
 .phone-number {
@@ -642,7 +642,7 @@ padding: 10px;
 .burger-sub-3.active {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 25px;
   padding-top: 20px;
 }
 
@@ -653,11 +653,29 @@ padding: 10px;
 .burger__item-top {
   display: flex;
   align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 340px;
+  border: 1px solid var(--Stroke, #28292d);
+  background: var(--light-dark-bg, #1f2023);
+  padding: 20px 10px;
 }
-
 
 .burger__item-top a:first-child {
   margin-right: 5px;
+}
+
+.burger__item-top.active {
+  background-color: #FF4D29;
+}
+
+.burger__item-top.active .drop-menu {
+  rotate: 180deg;
+  transition: all .2s ease;
+}
+
+.burger__item-top a {
+  color: #fff;
 }
 
 .burger__item {
@@ -761,7 +779,7 @@ ul.burger-sub-3 {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  max-width: 455px;
+  max-width: 555px;
   margin-bottom: 40px;
 }
 
@@ -2493,7 +2511,6 @@ a.footer__text:hover {
     right: 25px;
     transition: all 0.3s;
     cursor: pointer;
-
   }
 
   .burger:before {
@@ -2529,7 +2546,7 @@ a.footer__text:hover {
     z-index: 9999;
   }
 
-  .nav__link.active {
+.lang.active {
     margin-right: 0;
     margin-left: 50px;
   }
